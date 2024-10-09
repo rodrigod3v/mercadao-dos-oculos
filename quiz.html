@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Participe do nosso quiz sobre saúde ocular no Mercadão dos Óculos e descubra mais sobre a visão do seu filho(a)!">
+    <title>QUIZ! Mercadão dos Óculos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="logo-container">
+        <img id="logo" src="logo.png" alt="Logo do Questionário" class="logo">
+    </header>
+    <main class="container">
+        <!-- Questionário -->
+        <section id="question-container">
+            <h2 id="question-title" aria-live="polite"></h2>
+            <ul id="options-list" role="list"></ul>
+        </section>
+        <div class="navigation-buttons">
+            <button id="back-btn" onclick="prevQuestion()" aria-label="Voltar para a pergunta anterior">Voltar</button>
+            <button id="next-btn" onclick="nextQuestion()" aria-label="Ir para a próxima pergunta">Próxima</button>
+        </div>
+        
+        <!-- Resultado -->
+        <section id="result-container" class="hidden" aria-labelledby="result-heading">
+            <h2 id="result-heading">Resultado:</h2>
+            <p id="result-text"></p>
+            <button onclick="resetQuiz()" aria-label="Refazer o quiz">Refazer Quiz</button>
+              
+            <!-- Botão WhatsApp exibido ao final -->
+            <div class="whatsapp-container">
+                <a href="https://wa.me/5519984309271?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Mercadão%20dos%20Óculos." target="_blank" aria-label="Fale conosco no WhatsApp">
+                    <button class="whatsapp-btn">Fale Conosco no WhatsApp</button>
+                </a>
+            </div>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

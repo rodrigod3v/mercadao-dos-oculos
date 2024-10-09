@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="logo2.png" alt="Logo da Óptica" class="logo">
+            <div class="content">
+                <p>Identificar problemas de visão nas crianças é essencial para garantir que elas cresçam e aprendam adequadamente. 
+                    O <span class="highlight">Mercadão dos Óculos</span> oferece uma solução eficaz: um teste simples e rápido.
+                    Esse exame básico ajuda a identificar sinais como <span class="highlight">miopia</span>, <span class="highlight">hipermetropia</span> e <span class="highlight">astigmatismo</span>. 
+                    Cuidar dos olhos é fundamental para o aprendizado, e se o teste indicar algo fora do normal, um acompanhamento oftalmológico será crucial. 
+                    No <span class="highlight">Mercadão dos Óculos</span>, você encontra todo o apoio e cuidado para que o desenvolvimento das crianças siga bem orientado.
+                </p>
+                <button id="start-button" onclick="startQuiz()">INICIAR TESTE</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function startQuiz() {
+            window.location.href = 'quiz.html';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.highlight {
+    color: red;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 10px; /* Aproximar o logo do contêiner */
+}
+
+.logo {
+    max-width: 80%; /* Ajustar a largura máxima para caber melhor em telas pequenas */
+    height: auto;
+}
+
+#logo2 {
+    max-width: 100%; /* Faz com que a logo nunca ultrapasse o tamanho do container pai */
+    height: auto; /* Ajusta a altura proporcionalmente à largura */
+    display: block; /* Remove qualquer espaço adicional abaixo da imagem */
+    margin: 0 auto; /* Centraliza a logo horizontalmente (opcional) */
+  }
+
+.container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Usar 90% da largura da tela para telas pequenas */
+    max-width: 600px;
+    margin: 0 auto; /* Centralizar o contêiner */
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 17px;
+    margin: 0 auto 20px; /* Centraliza o texto */
+    max-width: 90%; /* Limita a largura do parágrafo a 90% da largura da tela */
+    line-height: 1.6; /* Melhor legibilidade com espaçamento entre as linhas */
+    text-align: center; /* Alinha o texto com as margens esquerda e direita */
+    padding: 0 20px; /* Garante espaçamento interno nas laterais para não encostar nas bordas */
+    word-break: break-word; /* Faz com que as palavras longas quebrem para evitar estouro de linha */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left; 
+}
+
+li {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+label {
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+label:hover {
+    background-color: #e0e0e0;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #e60000; 
+}
+
+button#back-btn {
+    background-color: #999;
+}
+
+button#back-btn:hover {
+    background-color: #666;
+}
+
+#result-container {
+    text-align: center;
+}
+
+#result-text {
+    font-size: 18px;
+    color: #333;
+    margin: 20px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Novo container para agrupar os botões "Refazer Quiz" e "WhatsApp" */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espaçamento entre os botões */
+    margin-top: 20px; /* Margem superior para afastar do conteúdo acima */
+}
+
+.whatsapp-container {
+    display: none; /* Escondido por padrão */
+    text-align: center;
+}
+
+.whatsapp-btn {
+    background-color: #20b358; /* Cor verde típica do WhatsApp */
+    color: white; /* Texto em branco */
+    border: none; /* Remove a borda */
+    padding: 10px 20px; /* Padding para espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de "mão" ao passar sobre o botão */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.whatsapp-btn:hover {
+    background-color: #25D366; /* Cor verde mais escura ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    h2 {
+        font-size: 18px; /* Tamanho menor do título */
+    }
+
+    li {
+        font-size: 16px; /* Tamanho maior das opções */
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 14px;
+        width: 100%; /* Botões ocupando toda a largura */
+        margin-right: 0; /* Remover margem direita */
+    }
+
+    .logo {
+        max-width: 80%; /* Manter logo responsivo */
+    }
+
+    .button-group {
+        flex-direction: column; /* Agrupar os botões em coluna */
+        gap: 0; /* Remover o espaçamento entre os botões */
+    }
+
+    button {
+        margin-top: 10px; /* Adicionar espaçamento entre os botões */
+    }
+}
